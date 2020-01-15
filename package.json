@@ -4,7 +4,9 @@
   "description": "langind pag foe natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "start": "parallelshell \"npm run compile:sass\" \"npm run serve\"",
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css -w",
+    "serve": "live-server --port=3000 ./"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,11 @@
   },
   "homepage": "https://github.com/Dmckinney821/css_refresh#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.0",
+    "parallelshell": "^3.0.2"
+    
   },
-  "dependencies": {}
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
 }
