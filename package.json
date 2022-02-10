@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Dmckinney821/css_refresh#readme",
   "devDependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "parallelshell": "^3.0.2"
     
   },
